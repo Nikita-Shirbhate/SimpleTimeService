@@ -2,7 +2,7 @@ module "eks" {
   source          = "terraform-aws-modules/eks/aws"
   cluster_name    = "simple-time-cluster"
   cluster_version = "1.29"
-  subnets         = aws_subnet.private[*].id
+  subnet_ids        = aws_subnet.private[*].id
   vpc_id          = aws_vpc.main.id
 
   eks_managed_node_groups = {
