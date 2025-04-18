@@ -1,0 +1,10 @@
+resource "aws_lb" "this" {
+  name               = "simpletime-alb"
+  internal           = false
+  load_balancer_type = "application"
+  subnets            = aws_subnet.public[*].id
+
+  tags = {
+    Name = "simpletime-alb"
+  }
+}
