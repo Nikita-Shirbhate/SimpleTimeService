@@ -1,13 +1,2 @@
-resource "aws_subnet" "public" {
-  # ...
-  tags = {
-    "kubernetes.io/role/elb" = "1"
-  }
-}
+subnet_ids = aws_subnet.public[*].id
 
-resource "aws_subnet" "private" {
-  # ...
-  tags = {
-    "kubernetes.io/role/internal-elb" = "1"
-  }
-}
