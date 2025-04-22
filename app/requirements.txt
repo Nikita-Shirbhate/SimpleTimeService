@@ -1,0 +1,12 @@
+# This requirements.txt file specifies the dependencies for the SimpleTimeService application.
+# 
+# flask==2.3.2
+# - Flask is a lightweight WSGI web application framework in Python.
+# - Version 2.3.2 is used for building the web service.
+#
+# gunicorn==21.2.0
+# - Gunicorn is a Python WSGI HTTP server for UNIX.
+# - Version 21.2.0 is used to deploy the Flask application in a production environment.
+
+flask==2.3.2
+gunicorn==21.2.0
